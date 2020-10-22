@@ -1,0 +1,75 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2 {
+  font-family: "Karla", sans-serif;
+}
+
+.Header {
+  padding: 10px;
+}
+.Header-nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.Header-image {
+  height: 80px;
+}
+.Header-title {
+  text-align: center;
+}
+.Header-nav,
+.Main {
+  margin: auto;
+  max-width: 1024px;
+}
+.Main {
+  margin-bottom: 15px;
+}
+.Main-hero {
+  max-width: 100%;
+}
+.Main-description {
+  text-align: center;
+}
+.Main-address {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.Main-address p {
+  margin: 5px;
+}
+.Main-description {
+  margin: 100px 0;
+}
+.Main-mapLink {
+  display: block;
+  text-align: center;
+}
+.Main-socialLink {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.Main-socialIcon {
+  height: 24px;
+  width: 24px;
+}
+@media screen and (min-width: 600px) {
+  .Header {
+    padding: 15px;
+  }
+  .Header-nav {
+    flex-direction: row;
+  }
+}
