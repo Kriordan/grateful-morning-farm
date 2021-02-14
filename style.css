@@ -9,10 +9,16 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Karla", sans-serif;
 }
 
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header Component */
 .Header {
   padding: 10px;
 }
@@ -28,18 +34,33 @@ h2 {
 .Header-title {
   text-align: center;
 }
-.Header-nav,
-.Main {
+.Header-nav {
   margin: auto;
   max-width: 1024px;
 }
+
+/* Main Component */
 .Main {
+  margin: auto;
   margin-bottom: 15px;
+  max-width: 1024px;
 }
 .Main-hero {
   max-width: 100%;
 }
+.Main-copyContainer {
+  padding: 0 20px;
+}
+.Main-header {
+  margin: 50px 0 20px;
+  text-align: center;
+}
 .Main-description {
+  text-align: center;
+}
+.Main-hours {
+  font-weight: 700;
+  margin-bottom: 100px;
   text-align: center;
 }
 .Main-address {
@@ -49,19 +70,27 @@ h2 {
 .Main-address p {
   margin: 5px;
 }
-.Main-description {
-  margin: 100px 0;
-}
 .Main-mapLink {
   display: block;
   text-align: center;
 }
-.Main-socialLink {
-  display: flex;
-  justify-content: center;
+
+/* Social Component */
+.Social-container {
   margin: 50px 0;
 }
-.Main-socialIcon {
+.Social-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.Social-linkContainer {
+  display: flex;
+  justify-content: center;
+}
+.Social-link {
+  margin: 0 10px;
+}
+.Social-icon {
   height: 24px;
   width: 24px;
 }
